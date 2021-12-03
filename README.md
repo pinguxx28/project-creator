@@ -40,3 +40,16 @@ r, README.md
 m, mod
 p, pkg
 f, startup file main.[lang]
+
+### supported languages
+```
+.bash
+.c
+.cpp
+.cs
+.go
+.html
+.java
+.js
+.py
+```
