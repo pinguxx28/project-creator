@@ -1,0 +1,90 @@
+#!/bin/bash
+
+
+z=1
+
+# Get the location where to please
+echo -n "location: "
+read loc
+cd $loc
+
+echo -n "name: "
+read name
+mkdir $name
+cd $name
+
+echo -n "lang: "
+read lang
+file="/home/pinguxx28/project-manager/main/*.$lang"
+
+echo -n "exc: "
+read exc
+
+# Flags
+s=0
+b=0
+l=0
+g=0
+d=0
+m=0
+p=0
+r=0
+f=0
+for (( i=0; i<${#exc}; i++ )); do
+    case "${exc:$i:1}" in
+        "a")
+        ;;
+        "s")
+            s=1
+            ;;
+        "b")
+            b=1
+            ;;
+        "l")
+            l=1
+            ;;
+        "g")
+            g=1
+            ;;
+        "d")
+            d=1
+            ;;
+        "m")
+            m=1
+            ;;
+        "p")
+            p=1
+            ;;
+        "r")
+            r=1
+            ;;
+        "f")
+            f=1
+            ;;
+    esac
+done
+
+if [ "$s" -eq "$z" ]; then
+    mkdir src
+fi
+if [ "$b" -eq "$z" ]; then
+    mkdir bin
+fi
+if [ "$l" -eq "$z" ]; then
+    mkdir lib
+fi
+if [ "$g" -eq "$z" ]; then
+    touch .gitignore
+fi
+if [ "$r" -eq "$z" ]; then
+    touch README.md
+fi
+if [ "$m" -eq "$z" ]; then
+    mkdir mod
+fi
+if [ "$p" -eq "$z" ]; then
+    mkdir pkg
+fi
+if [ "$f" -eq "$z" ]; then
+    cp $file ./src
+fi
