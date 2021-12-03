@@ -10,7 +10,9 @@ Made by pinguxx28, Dec 2nd - (Dec 3rd, last update)
 - Download this repository or use `git clone https://github.com/pinguxx28/project-creator.git`
 - Open up a bash terminal
 - Locate to the directory you cloned into using `cd /[PATH_TO_YOUR_DIR]`
+
 <br>
+
 - Do `pwd` to see in which directory you are currently in, copy the output
 - Use your preferred text editor (vim, vs code, sumblime, etc..) to open "mkp" and paste the output inside of the quotation marks ("") and save the file
 
